@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte de Prix</title>
+  <style>
+    /* 🌟 Style global de la page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 📦 Conteneur principal de la carte */
+    .pricing {
+      max-width: 320px; /* 📱 Responsive : largeur maximale */
+      width: 100%;
+      margin: auto;
+      background-color: #fff;
+      box-shadow: 0 0 10px #ccc; /* ✅ Correction de box-shadow */
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* 🏷️ Titre de la carte */
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* 💵 Affichage du prix */
+    .price {
+      font-size: 18px;
+      color: green;
+      margin-bottom: 15px;
+    }
+
+    /* 📋 Liste des fonctionnalités */
+    .features {
+      list-style: none; /* ✅ Supprime les puces */
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .features li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* 🔘 Bouton d'action */
+    .btn {
+      background: blue;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer; /* ✅ Rend le curseur cliquable */
+      width: 100%; /* ✅ Pleine largeur du bouton */
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background: darkblue;
+    }
+
+    /* 📱 Ajustements mobiles */
+    @media (max-width: 480px) {
+      .pricing {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧱 Composant de carte de prix -->
+  <section class="pricing" role="region" aria-label="Forfait de base">
+    <!-- ✅ Correction de la fermeture de <h2> -->
+    <h2 class="title">Forfait de base</h2>
+    <p class="price">9,99 $/mois</p>
+
+    <!-- ✅ Liste des fonctionnalités -->
+    <ul class="features">
+      <li>1 Go de stockage</li>
+      <li>Assistance de base</li>
+      <li>Toutes les fonctionnalités principales</li>
+    </ul>
+
+    <!-- ✅ Bouton d'action avec accessibilité -->
+    <button class="btn" aria-label="Démarrer l'essai gratuit">Démarrer l'essai</button>
+  </section>
+
+</body>
+</html>

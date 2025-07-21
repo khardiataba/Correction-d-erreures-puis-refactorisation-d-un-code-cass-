@@ -1,0 +1,115 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --card-bg: #f0f0f0;
+  --btn-bg: blue;
+  --btn-text: white;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --card-bg: #1f1f1f;
+  --btn-bg: #2196f3;
+  --btn-text: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.controls button {
+  margin-left: 1rem;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pricing-card {
+  max-width: 320px;
+  width: 100%;
+  background-color: var(--card-bg);
+  box-shadow: 0 0 10px #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.pricing-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pricing-price {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 15px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(1.2);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .pricing-card {
+    padding: 16px;
+  }
+}
+
+/* ✨ Animation d'apparition */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
