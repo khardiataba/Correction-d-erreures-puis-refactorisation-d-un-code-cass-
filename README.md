@@ -60,3 +60,6 @@ Les cartes de prix apparaissent avec une animation fluide. Le code est :
 ## 👩‍💻 Auteur
 
 Projet réalisé dans le cadre d’un entraînement aux **meilleures pratiques de développement frontend assisté par l’IA**.
+
+## Référence
+ChatGPT
